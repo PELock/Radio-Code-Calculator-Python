@@ -165,7 +165,7 @@ class RadioCodeCalculator(object):
     # 
     # @var string default Radio Code Calculator API WebApi endpoint
     # 
-    API_URL: str = "https://www.wyznania.com/api/radio-code-calculator/v1"
+    API_URL: str = "https://www.pelock.com/api/radio-code-calculator/v1"
 
     # 
     # @var string WebApi key for the service
@@ -183,7 +183,7 @@ class RadioCodeCalculator(object):
     def login(self) -> tuple[int, dict]:
         """Login to the service and get the information about the current license limits
 
-        :return: A dictionary with the results or None on error
+        :return: A dictionary with an error code, and an optional dictionary with the raw results (or Null on error)
         :rtype: Optional[Dict]
         """
 
@@ -194,13 +194,13 @@ class RadioCodeCalculator(object):
         return result["error"], result
 
     def calc(self, radio_model: Union[RadioModel, str], radio_serial_number: str, radio_extra_data: str = "") -> tuple[int, dict]:
-        """List all the supported radio calculators and their parameters (name, max. len & regex pattern)
+        """Calculate the radio code for the selected radio model
 
         :param Union[RadioModel, str] radio_model: Radio model either as a RadioModel class or a string
         :param str radio_serial_number: Radio serial number / pre code
         :param str radio_extra_data: Optional extra data (for example - a supplier code) to generate the radio code
 
-        :return: An error code and an optional dictionary with the raw results
+        :return: A list with an error code, and an optional dictionary with the raw results (or null)
         :rtype: tuple[int, dict]:
         """
 
@@ -219,7 +219,7 @@ class RadioCodeCalculator(object):
         """Get the information about the given radio calculator and its parameters (name, max. len & regex pattern)
 
         :param Union[RadioModel, str] radio_model: Radio model either as a RadioModel class or a string
-        :return: An error code and an optional RadioModel class
+        :return: A list with an error code, and an optional RadioModel create from the return values (or null)
         :rtype: tuple[int, Optional[RadioModel]]:
         """
 
@@ -243,7 +243,7 @@ class RadioCodeCalculator(object):
     def list(self) -> tuple[int, Optional[list[RadioModel]]]:
         """List all the supported radio calculators and their parameters (name, max. len & regex pattern)
 
-        :return: A dictionary with the results or None on error
+        :return: A list with an error code, and an optional list of supported RadioModels (or null)
         :rtype: tuple[int, Optional[list[RadioModel]]]:
         """
 
@@ -274,7 +274,7 @@ class RadioCodeCalculator(object):
         """Send a POST request to the server
 
         :param Dict params_array: An array with the parameters
-        :return: A dictionary with the results
+        :return: A dictionary with the POST request results (or default error)
         :rtype: Dict
         """
 
