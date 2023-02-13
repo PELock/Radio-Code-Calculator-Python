@@ -6,7 +6,7 @@
 #
 # Generate radio unlocking codes for various radio players.
 #
-# Version      : v1.00
+# Version      : v1.02
 # Python       : Python v3
 # Dependencies : requests (https://pypi.python.org/pypi/requests/)
 # Author       : Bartosz Wójcik (support@pelock.com)
