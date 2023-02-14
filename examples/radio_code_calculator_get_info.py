@@ -28,19 +28,19 @@ myRadioCodeCalculator = RadioCodeCalculator("ABCD-ABCD-ABCD-ABCD")
 #
 # query information about the radio model
 #
-error, radioModel = myRadioCodeCalculator.info("ford-m-series")
+error, radio_model = myRadioCodeCalculator.info("ford-m-series")
 
 if error == RadioErrors.SUCCESS:
 
-    print(f'Radio model name - {radioModel.name}')
+    print(f'Radio model name - {radio_model.name}')
 
-    print(f'Max. length of the radio serial number - {radioModel.serial_max_len}')
-    print(f'Regex pattern for the radio serial number - {radioModel.serial_regex_pattern}')
+    print(f'Max. length of the radio serial number - {radio_model.serial_max_len}')
+    print(f'Regex pattern for the radio serial number - {radio_model.serial_regex_pattern}')
 
     # is extra field specified?
-    if radioModel.extra_max_len > 0:
-        print(f'Max. length of the radio extra data - {radioModel.extra_max_len}')
-        print(f'Regex pattern for the radio extra data - {radioModel.extra_regex_pattern}')
+    if radio_model.extra_max_len > 0:
+        print(f'Max. length of the radio extra data - {radio_model.extra_max_len}')
+        print(f'Regex pattern for the radio extra data - {radio_model.extra_regex_pattern}')
 
     print()
 
