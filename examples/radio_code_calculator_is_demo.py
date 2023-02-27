@@ -6,7 +6,7 @@
 #
 # In this example we will verify our activation key status.
 #
-# Version        : v1.00
+# Version        :v1.1.0
 # Language       : Python
 # Author         : Bartosz Wójcik
 # Project        : https://www.pelock.com/products/radio-code-calculator
