@@ -6,7 +6,7 @@
 #
 # Validate Radio Code Calculator Web API responses
 #
-# Version        : v1.1.0
+# Version        : v1.1.2
 # Language       : Python
 # Author         : Bartosz Wójcik
 # Project        : https://www.pelock.com/products/radio-code-calculator
@@ -106,6 +106,7 @@ class TestRadioCodeCalculator(unittest.TestCase):
             RadioModels.FIAT_DAIICHI: ["6461", "8354"],
             RadioModels.TOYOTA_ERC: ["10211376ab8e0d25", "A6905892"],
             RadioModels.JEEP_CHEROKEE: ["TQ1AA1500E2884", "1315"],
+            RadioModels.NISSAN_GLOVE_BOX: ["D4CDDC568498", "55B7AB0BAB6F"],
         }
 
         for model in codes:

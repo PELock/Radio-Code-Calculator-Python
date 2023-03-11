@@ -29,6 +29,7 @@ Individual calculators are available on our site as a paid service for end custo
 * [Chrysler Panasonic TM9](https://www.pelock.com/products/chrysler-panasonic-tm9-car-radio-code-calculator-generator)
 * [Fiat Stilo & Bravo Visteon](https://www.pelock.com/products/fiat-stilo-bravo-visteon-radio-code-calculator-generator)
 * [Fiat DAIICHI MOPAR](https://www.pelock.com/products/fiat-daiichi-radio-code-calculator-generator)
+* [Nissan Glove Box Immobiliser PIN](https://www.pelock.com/products/nissan-glove-box-pin-code-calculator)
 
 ## Use of radio code calculator
 
@@ -104,7 +105,7 @@ This example demonstrates code generation for a selected radio model. All input 
 # In this example, we will demonstrate how to generate a code for a specific
 # type of car radio.
 #
-# Version        : v1.1.0
+# Version        : v1.1.2
 # Language       : Python
 # Author         : Bartosz Wójcik
 # Project        : https://www.pelock.com/products/radio-code-calculator
@@ -172,7 +173,7 @@ Validation of this data is done on the server side. However, to make things more
 # type of car radio. This example shows how to use an extended offline
 # validation.
 #
-# Version        : v1.1.0
+# Version        : v1.1.2
 # Language       : Python
 # Author         : Bartosz Wójcik
 # Project        : https://www.pelock.com/products/radio-code-calculator
@@ -282,7 +283,7 @@ If you would like to download information about all supported radio models and t
 # parameters like name, maximum length of the radio serial number and its
 # regex pattern.
 #
-# Version        : v1.1.0
+# Version        : v1.1.2
 # Language       : Python
 # Author         : Bartosz Wójcik
 # Project        : https://www.pelock.com/products/radio-code-calculator
@@ -343,7 +344,7 @@ You can download the parameters of the selected calculator.
 # In this example, we will demonstrate how to get information about the
 # specific radio calculator and its parameters (max. length & regex pattern).
 #
-# Version        : v1.1.0
+# Version        : v1.1.2
 # Language       : Python
 # Author         : Bartosz Wójcik
 # Project        : https://www.pelock.com/products/radio-code-calculator
@@ -399,7 +400,7 @@ By checking the activation key status, we will get information about the license
 #
 # In this example we will verify our activation key status.
 #
-# Version        : v1.1.0
+# Version        : v1.1.2
 # Language       : Python
 # Author         : Bartosz Wójcik
 # Project        : https://www.pelock.com/products/radio-code-calculator
