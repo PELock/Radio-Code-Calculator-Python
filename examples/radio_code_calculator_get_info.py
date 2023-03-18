@@ -7,7 +7,7 @@
 # In this example, we will demonstrate how to get information about the
 # specific radio calculator and its parameters (max. length & regex pattern).
 #
-# Version        :v1.1.2
+# Version        : v1.1.3
 # Language       : Python
 # Author         : Bartosz Wójcik
 # Project        : https://www.pelock.com/products/radio-code-calculator
