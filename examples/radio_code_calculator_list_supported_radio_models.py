@@ -8,7 +8,7 @@
 # parameters like name, maximum length of the radio serial number and its
 # regex pattern.
 #
-# Version        : v1.1.3
+# Version        : v1.1.4
 # Language       : Python
 # Author         : Bartosz Wójcik
 # Project        : https://www.pelock.com/products/radio-code-calculator
