@@ -6,12 +6,14 @@
 #
 # Generate radio unlocking codes for various radio players.
 #
-# Version      : v1.1.4
+# Version      : v1.1.5
 # Python       : Python v3
 # Dependencies : requests (https://pypi.python.org/pypi/requests/)
 # Author       : Bartosz Wójcik (support@pelock.com)
 # Project      : https://www.pelock.com/products/radio-code-calculator
 # Homepage     : https://www.pelock.com
+# Copyright     : (c) 2021-2024 PELock LLC
+# License       : Apache-2.0
 #
 ###############################################################################
 
@@ -156,6 +158,7 @@ class RadioModels(object):
     FORD_TRAVELPILOT: RadioModel = RadioModel("ford-travelpilot", 7, r"^([0-9]{7})$")
     FIAT_STILO_BRAVO_VISTEON: RadioModel = RadioModel("fiat-stilo-bravo-visteon", 6, r"^([a-zA-Z0-9]{6})$")
     FIAT_DAIICHI: RadioModel = RadioModel("fiat-daiichi", 4, r"^([a-zA-Z0-9]{4})$")
+    FIAT_VP: RadioModel = RadioModel("fiat-vp", 4, r"^([a-zA-Z0-9]{4})$")
     TOYOTA_ERC: RadioModel = RadioModel("toyota-erc", 16, r"^([a-zA-Z0-9]{16})$")
     JEEP_CHEROKEE: RadioModel = RadioModel("jeep-cherokee", 14, r"^([a-zA-Z0-9]{10}[0-9]{4})$")
     NISSAN_GLOVE_BOX: RadioModel = RadioModel("nissan-glove-box", 12, r"^([a-zA-Z0-9]{12})$")
