@@ -6,7 +6,7 @@
 #
 # Generate radio unlocking codes for various radio players.
 #
-# Version      : v1.1.5
+# Version      : v1.1.6
 # Python       : Python v3
 # Dependencies : requests (https://pypi.python.org/pypi/requests/)
 # Author       : Bartosz Wójcik (support@pelock.com)
@@ -153,6 +153,7 @@ class RadioModels(object):
 
     RENAULT_DACIA: RadioModel = RadioModel("renault-dacia", 4, r"^([A-Z]{1}[0-9]{3})$")
     CHRYSLER_PANASONIC_TM9: RadioModel = RadioModel("chrysler-panasonic-tm9", 4, r"^([0-9]{4})$")
+    CHRYSLER_DODGE_VP: RadioModel = RadioModel("chrysler-dodge-vp", 4, r"^([a-zA-Z0-9]{4})$")
     FORD_M_SERIES: RadioModel = RadioModel("ford-m-series", 6, r"^([0-9]{6})$")
     FORD_V_SERIES: RadioModel = RadioModel("ford-v-series", 6, r"^([0-9]{6})$")
     FORD_TRAVELPILOT: RadioModel = RadioModel("ford-travelpilot", 7, r"^([0-9]{7})$")

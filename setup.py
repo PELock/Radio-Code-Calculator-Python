@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(name='radio_code_calculator',
 
-    version='1.1.5',
+    version='1.1.6',
 
     description='Radio Code Calculator is an online service along with Web API and SDK for generating car radio unlock codes for popular vehicle brands.',
     long_description=long_description,

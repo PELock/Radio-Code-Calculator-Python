@@ -8,7 +8,7 @@
 # type of car radio. This example shows how to use an extended offline
 # validation.
 #
-# Version        : v1.1.5
+# Version        : v1.1.6
 # Language       : Python
 # Author         : Bartosz Wójcik
 # Project        : https://www.pelock.com/products/radio-code-calculator
